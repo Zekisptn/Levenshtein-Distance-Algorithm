@@ -1,0 +1,87 @@
+C++ Programming|Bjarne Stroustrup|Addison-Wesley|1985
+Data Structures|Robert Lafore|Pearson|2002
+Introduction to Algorithms|Thomas H. Cormen|MIT Press|2009
+Data Science for All|John Doe|Tech Press|2020
+Python Programming|Guido van Rossum|O'Reilly Media|2018
+Introduction to Machine Learning|Ethem Alpaydin|MIT Press|2014
+Deep Learning|Ian Goodfellow|MIT Press|2016
+Artificial Intelligence: A Modern Approach|Stuart Russell|Pearson|2010
+The Art of Computer Programming|Donald Knuth|Addison-Wesley|1968
+Design Patterns|Erich Gamma|Addison-Wesley|1994
+Clean Code|Robert C. Martin|Prentice Hall|2008
+The Pragmatic Programmer|Andrew Hunt|Addison-Wesley|1999
+Learning Python|Mark Lutz|O'Reilly Media|2013
+Java: The Complete Reference|Herbert Schildt|McGraw-Hill|2011
+Operating System Concepts|Abraham Silberschatz|Wiley|2018
+Database Systems: The Complete Book|Hector Garcia-Molina|Prentice Hall|2008
+Introduction to Database Systems|C.J. Date|Addison-Wesley|2004
+The Mythical Man-Month|Frederick P. Brooks|Addison-Wesley|1975
+Code Complete|Steve McConnell|Microsoft Press|2004
+The Clean Coder|Robert C. Martin|Prentice Hall|2011
+Algorithms|Robert Sedgewick|Addison-Wesley|2011
+The Linux Programming Interface|Michael Kerrisk|No Starch Press|2010
+Artificial Intelligence: Structures and Strategies for Solving Complex Problems|George F. Luger|Addison-Wesley|2002
+Compilers: Principles, Techniques, and Tools|Alfred V. Aho|Addison-Wesley|2006
+The Go Programming Language|Alan A. A. Donovan|Addison-Wesley|2015
+Effective Java|Joshua Bloch|Addison-Wesley|2008
+Introduction to the Theory of Computation|Michael Sipser|Cengage Learning|2012
+The Algorithm Design Manual|Steven S. Skiena|Springer|2008
+Modern Operating Systems|Andrew S. Tanenbaum|Pearson|2014
+Principles of Compiler Design|Aho, Ullman|Addison-Wesley|1977
+Advanced Programming in the UNIX Environment|W. Richard Stevens|Addison-Wesley|2005
+Unix Network Programming|W. Richard Stevens|Addison-Wesley|2004
+Programming Pearls|Jon Bentley|Addison-Wesley|1986
+The Design of Everyday Things|Don Norman|Basic Books|1988
+Learning JavaScript|Shelley Powers|O'Reilly Media|2013
+Data Science from Scratch|Joel Grus|O'Reilly Media|2015
+Python for Data Analysis|Wes McKinney|O'Reilly Media|2017
+Practical Statistics for Data Scientists|Peter Bruce|O'Reilly Media|2017
+R for Data Science|Hadley Wickham|O'Reilly Media|2016
+Deep Learning with Python|Francois Chollet|Manning Publications|2017
+Python Machine Learning|Sebastian Raschka|Packt Publishing|2015
+Mathematics for Machine Learning|Marc Peter Deisenroth|Cambridge University Press|2020
+Introduction to Artificial Intelligence|Wolfgang Ertel|Springer|2018
+The Hundred-Page Machine Learning Book|Andriy Burkov|Andriy Burkov|2019
+Data Visualization with Python|Kiran S. K.|Packt Publishing|2017
+Machine Learning Yearning|Andrew Ng|Self-published|2018
+Deep Reinforcement Learning Hands-On|Maxim Lapan|Packt Publishing|2018
+Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow|Aurélien Géron|O'Reilly Media|2019
+Machine Learning with Python|Sebastian Raschka|Packt Publishing|2015
+Data Science Handbook|Jake VanderPlas|O'Reilly Media|2016
+The Data Science Venn Diagram|Svetlana Sicular|O'Reilly Media|2018
+Introduction to Machine Learning with Python|Andreas C. Müller|O'Reilly Media|2016
+Artificial Intelligence for Humans|Jeff Heaton|Heaton Research|2013
+Python for Everybody|Charles Severance|Self-published|2016
+Programming in Scala|Martin Odersky|Artima|2008
+Advanced Data Structures|Peter Brass|Springer|2008
+Game Programming Patterns|Robert Nystrom|Geneva|2014
+Big Data: Principles and Paradigms|Rajendra Akerkar|CRC Press|2013
+Cloud Computing: Concepts, Technology & Architecture|Thomas Erl|Prentice Hall|2013
+JavaScript: The Good Parts|Douglas Crockford|O'Reilly Media|2008
+Eloquent JavaScript|Marijn Haverbeke|No Starch Press|2014
+Learning React|Alex Banks|O'Reilly Media|2017
+Node.js Design Patterns|Mario Casciaro|Packt Publishing|2014
+Mastering Bitcoin|Andreas M. Antonopoulos|O'Reilly Media|2017
+The Blockchain Revolution|Don Tapscott|Penguin|2016
+Ethereum: A Secure Decentralised Generalised Transaction Ledger|Vitalik Buterin|Ethereum Foundation|2014
+Blockchain Basics|Daniel Drescher|Springer|2017
+Designing Data-Intensive Applications|Martin Kleppmann|O'Reilly Media|2017
+Microservices Patterns|Chris Richardson|Manning Publications|2018
+Test-Driven Development|Kent Beck|Addison-Wesley|2002
+Learning SQL|Alan Beaulieu|O'Reilly Media|2009
+SQL Antipatterns|Bill Karwin|Pragmatic Bookshelf|2010
+The Data Warehouse Toolkit|Ralph Kimball|Wiley|2002
+Designing Data-Intensive Applications|Martin Kleppmann|O'Reilly Media|2017
+SQL Performance Explained|Markus Winand|Self-published|2012
+Hadoop: The Definitive Guide|Tom White|O'Reilly Media|2015
+Spark: The Definitive Guide|Bill Chambers|O'Reilly Media|2018
+Data Engineering on Azure|Sandeep Parikh|Packt Publishing|2018
+The Data Warehouse ETL Toolkit|Joe Caserta|Wiley|2009
+Functional Programming in Scala|Paul Chiusano|Manning Publications|2013
+Learning R|Hadley Wickham|O'Reilly Media|2015
+Data Mining: Practical Machine Learning Tools and Techniques|Ian H. Witten|Morgan Kaufmann|2016
+The Art of Data Science|Roger D. Peng|CreateSpace|2013
+The Data Science Handbook|Carl Shan|CreateSpace|2015
+Data Science at the Command Line|Jeroen Janssens|O'Reilly Media|2014
+Data Science for Business|Foster Provost|O'Reilly Media|2013
+The Signal and the Noise|Nate Silver|Penguin|2012

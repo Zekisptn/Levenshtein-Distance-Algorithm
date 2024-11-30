@@ -1,4 +1,6 @@
 #include <iostream>
+#include <fstream>
+#include <sstream>
 #include <string>
 #include <vector>
 #include <algorithm>
@@ -11,6 +13,35 @@ struct Buku {
     string penerbit;
     int tahun;
 };
+
+// Fungsi untuk membaca buku dari file
+vector<Buku> bacaBukuDariFile(const string& namaFile) {
+    vector<Buku> daftarBuku;
+    ifstream file(namaFile);
+
+    if (!file.is_open()) {
+        cerr << "Gagal membuka file: " << namaFile << endl;
+        return daftarBuku;
+    }
+
+    string line;
+    while (getline(file, line)) {
+        stringstream ss(line);
+        string judul, pengarang, penerbit, tahunStr;
+        int tahun;
+
+        getline(ss, judul, '|');
+        getline(ss, pengarang, '|');
+        getline(ss, penerbit, '|');
+        getline(ss, tahunStr);
+        tahun = stoi(tahunStr);
+
+        daftarBuku.push_back({judul, pengarang, penerbit, tahun});
+    }
+
+    file.close();
+    return daftarBuku;
+}
 
 // Fungsi untuk menghitung Levenshtein Distance
 int hitungLevenshtein(const string& str1, const string& str2) {
@@ -44,7 +75,8 @@ bool containsSubstring(const string& str, const string& kataKunci) {
     return strLower.find(kataKunciLower) != string::npos;
 }
 
-bool cariBuku(Buku daftarBuku[], int jumlahBuku) {
+// Fungsi utama untuk mencari buku
+bool cariBuku(const vector<Buku>& daftarBuku) {
     while (true) {
         cout << "\nMasukkan kata kunci untuk mencari buku: ";
         string kataKunci;
@@ -55,7 +87,7 @@ bool cariBuku(Buku daftarBuku[], int jumlahBuku) {
         vector<pair<int, int>> hasilLevenshtein;
 
         // Mencari buku yang judulnya mengandung kata kunci
-        for (int i = 0; i < jumlahBuku; ++i) {
+        for (size_t i = 0; i < daftarBuku.size(); ++i) {
             if (containsSubstring(daftarBuku[i].judul, kataKunci)) {
                 hasilIndeks.push_back(i);
             } else {
@@ -80,9 +112,9 @@ bool cariBuku(Buku daftarBuku[], int jumlahBuku) {
             }
 
             if (!hasilLevenshtein.empty()) {
-                cout << "\nJudul buku yang hampir cocok (mungkin typo):" << endl;
+                cout << "\nJudul buku yang mungkin cocok:" << endl;
                 for (auto& [idx, jarak] : hasilLevenshtein) {
-                    cout << nomorList++ << ". " << daftarBuku[idx].judul << " (jarak: " << jarak << ")" << endl;
+                    cout << nomorList++ << ". " << daftarBuku[idx].judul << endl;
                 }
             }
 
@@ -100,7 +132,8 @@ bool cariBuku(Buku daftarBuku[], int jumlahBuku) {
                 }
 
                 // Menampilkan detail buku dengan nomor dari database
-                cout << "\nDetail Buku yang Dipilih (Nomor Buku: " << idx + 1 << "):" << endl;
+                cout << "\nDetail Buku yang Dipilih:" << endl;
+                cout << "Nomor Buku: " << (idx + 1) << endl; // Menampilkan nomor sesuai urutan data
                 cout << "Judul: " << daftarBuku[idx].judul << endl;
                 cout << "Pengarang: " << daftarBuku[idx].pengarang << endl;
                 cout << "Penerbit: " << daftarBuku[idx].penerbit << endl;
@@ -131,19 +164,19 @@ bool cariBuku(Buku daftarBuku[], int jumlahBuku) {
 }
 
 int main() {
-    // Menyimpan data buku dalam array
-    Buku daftarBuku[] = {
-        {"C++ Programming", "Bjarne Stroustrup", "Addison-Wesley", 1985},
-        {"Data Structures", "Robert Lafore", "Pearson", 2002},
-        {"Introduction to Algorithms", "Thomas H. Cormen", "MIT Press", 2009},
-        {"Data Science for All", "John Doe", "Tech Press", 2020},
-        {"Data Scire for All", "John Doe", "Tech Press", 2020}
-    };
+    // Nama file tempat menyimpan daftar buku
+    string namaFile = "C:\\Users\\DM-ZackySeptian\\Documents\\zaki-project\\kuliah\\tugas-pak-hudi\\daftar_buku.txt";
 
-    int jumlahBuku = sizeof(daftarBuku) / sizeof(daftarBuku[0]);
+    // Membaca daftar buku dari file
+    vector<Buku> daftarBuku = bacaBukuDariFile(namaFile);
+
+    if (daftarBuku.empty()) {
+        cerr << "Tidak ada buku dalam file." << endl;
+        return 1;
+    }
 
     // Memulai pencarian buku
-    while (cariBuku(daftarBuku, jumlahBuku)) {}
+    while (cariBuku(daftarBuku)) {}
 
     cout << "Terima kasih telah menggunakan program pencarian buku." << endl;
     return 0;
