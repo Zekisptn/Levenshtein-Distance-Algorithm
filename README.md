@@ -30,6 +30,7 @@ Program ini dirancang untuk membantu pengguna mencari buku berdasarkan judul, te
      - Ketik **0** untuk mencari buku kembali.
 7. **Lihat Detail Buku**
    - Jika Anda memilih buku, program akan menampilkan detail lengkap, termasuk:
+     - Nomor Buku : (Nomor rak buku)
      - Judul
      - Pengarang
      - Penerbit
